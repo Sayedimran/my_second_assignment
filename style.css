@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  
+  /* border: 2px solid red; */
 }
 body {
   font-family: "Inter", sans-serif;
@@ -213,7 +213,6 @@ p {
   padding: 16px 40px 16px 40px;
 }
 
-
 .BMcalculate-conatiner {
   margin-top: 100px;
 }
@@ -230,7 +229,7 @@ p {
   align-items: center;
   justify-content: center;
   justify-items: center;
-  background: #000000;
+
   gap: 50px;
 }
 .tables-data {
@@ -285,6 +284,51 @@ td {
 .item5 {
   grid-column: span 2;
 }
+.team-sections-blr {
+  width: 1060px;
+  height: 704px;
+  padding: 20px;
+  border-radius: 18px;
+  margin-left: 400px;
+  margin-top: 70px;
+  background: rgba(196, 182, 182, 0.2);
+}
+.team-mambers {
+  display: grid;
+  margin-top: 20px;
+  align-items: center;
+  gap: 20px;
+
+  grid-template-columns: repeat(3, 2fr);
+}
+
+.Team-descript h1 {
+  text-align: center;
+  color: aliceblue;
+  font-size: 34px;
+  margin-top: 100px;
+}
+.members img {
+  width: 326px;
+  height: 272px;
+  padding: 7px;
+  border-radius: 18px;
+  position: relative;
+  background: rgba(0, 0, 0, 0.2);
+}
+.prof-name1 {
+  color: aliceblue;
+  position: absolute;
+  margin-left: 50px;
+  margin-top: -70px;
+}
+.prof-name2 {
+  color: rgb(207, 220, 231);
+  position: absolute;
+  margin-left: 50px;
+  margin-top: -40px;
+}
+
 @media screen and (max-width: 576px) {
   /* nav respon start */
   #menu-icon {
@@ -350,14 +394,27 @@ td {
     width: 250px;
     margin-left: 0px;
   }
-  .table-container{
+  .table-container {
     flex-direction: column;
     padding: 0px;
   }
-  .Calculate-bmi{
+  .Calculate-bmi {
     width: 400px;
   }
-  .gridItem{
+  .gridItem {
     width: 150px;
+  }
+  .team-mambers {
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 20px;
+  }
+  .team-sections-blr {
+    width: 360px;
+    height: 1850px;
+    margin-left: 15px;
+    margin-top: 10px;
+  }
+  .Team-descript{
+    margin-top: 200px;
   }
 }
